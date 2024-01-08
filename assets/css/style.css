@@ -1,0 +1,217 @@
+:root {
+    --color-white: #fff;
+    --color-dark: #000;
+    --color-orange: #ffa500;
+}
+
+.navbar.fkNavbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.fkNavbar .navbar-brand {
+    /* padding-top: 0.5rem;
+    padding-bottom: 0.5rem; */
+    margin-left: 20px;
+}
+
+.fkNavbar img {
+    vertical-align: middle;
+    border-style: none;
+    position: relative;
+    right: 70px;
+    width: 185px;
+}
+
+.navbar.fkNavbar {
+    background-color: var(--color-dark);
+}
+
+.fkNavbar .navbar-nav .active>.nav-link,
+.fkNavbar .navbar-nav .nav-link.active,
+.fkNavbar .navbar-nav .nav-link.show {
+    font-weight: bold;
+}
+
+.fkNavbar .nav-link {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.fkNavbar .navbar-nav .active>.nav-link,
+.fkNavbar .navbar-nav .nav-link.active,
+.fkNavbar .navbar-nav .nav-link.show,
+.fkNavbar .navbar-nav .show>.nav-link,
+.fkNavbar .navbar-nav .nav-link:focus,
+.fkNavbar .navbar-nav .nav-link:hover {
+    transition: all .5s ease-in-out;
+    color: var(--color-white);
+    /* border-bottom: 4px solid var(--color-orange); */
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.fkNavbar .navbar-nav .nav-link {
+    color: var(--color-white);
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.fkNavbar .navbar-toggler {
+    border-color: var(--color-white);
+}
+
+
+/* ############# mainslider css starts here ################ */
+
+
+.mainSlider .carousel-inner,
+.mainSlider .carousel-item>img {
+    height: 400px;
+}
+
+.mainSlider .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+
+.mainSlider .carousel-item>img {
+    object-fit: cover;
+}
+
+.iconsInfo .rotate {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+
+.iconsInfo .rotate:hover {
+    transform: rotate(360deg);
+    color: blueviolet;
+}
+
+/* ############# mainParallax css starts here ################ */
+
+.mainParallax {
+    background-image: url(../images/n1\ \(4\).jpg);
+}
+
+.videoInfo {
+    background-image: url(../images/n1\ \(11\).jpg);
+}
+
+.mainParallax,
+.videoInfo {
+    /* background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)), url(../images/image4.jpg); */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mainParallax::before,
+.videoInfo::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.videoInfo i,
+.laptopInfo .card,
+.courses .card {
+    transition: all .4s ease-in-out;
+}
+
+.videoInfo i:hover {
+    transform: scale(1.5);
+}
+
+.imgGallary .img-fluid {
+    display: block;
+}
+
+.imgGallary img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    transition: all .3s ease-in-out;
+}
+
+
+.imgGallary img:hover,
+.laptopInfo .card:hover,
+.courses .card:hover {
+    transform: scale(1.11);
+    cursor: pointer;
+}
+
+.newsInfo {
+    background-color: whitesmoke;
+}
+
+
+.theUltimateCoders {
+    background: url(../images/code2.jpg) no-repeat center/cover;
+    color: var(--color-white);
+    background-attachment: fixed;
+    font-style: normal;
+}
+
+
+/* ################ css for aboutus for laptopInfo ############### */
+
+.laptopInfo .row {
+    margin-bottom: 60px;
+}
+
+
+
+/* ########### css for aboutus for feedbackInfo ############# */
+
+.feedbackInfo .owl-item img {
+    display: block;
+    width: 80%;
+    border: 2px solid whitesmoke;
+    margin: 0 auto 1.25rem;
+}
+
+
+/* ########### css for aboutus for courses ############# */
+
+.courses li {
+    display: flex;
+    justify-content: center;
+}
+
+.courses li i {
+    padding-right: 10px;
+}
+
+
+.courses li>span {
+    text-align: left;
+    padding-left: 10px;
+    align-self: center;
+    font-weight: bold;
+}
+
+
+.accordian .btn-link {
+    font-weight: 900;
+    color: #415a77;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.accordian {
+    background-color: lightblue;
+}
